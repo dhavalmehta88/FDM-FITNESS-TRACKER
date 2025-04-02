@@ -74,6 +74,7 @@ export default function App() {
     const worksheet = XLSX.utils.json_to_sheet(allEntries);
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, "Log");
+XLSX.writeFile(workbook, "Fitness_Report.xlsx");
     XLSX.writeFile(workbook, "Fitness_Report.xlsx");
   };
 
